@@ -26,7 +26,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/Portfolio/",
+  base: "/",
   plugins: [react(), tailwindcss()],
   assetsInclude: ["**/*.PDF"],
 });
