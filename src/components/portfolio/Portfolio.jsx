@@ -4,6 +4,7 @@ import card50 from "../../assets/images/portfolio-images/card-50.png";
 import card3 from "../../assets/images/portfolio-images/card-3.png";
 import card49 from "../../assets/images/portfolio-images/card-49.png";
 import card60 from "../../assets/images/portfolio-images/card-60.png";
+import card61 from "../../assets/images/portfolio-images/card-61.png";
 import card51 from "../../assets/images/portfolio-images/card-51.png";
 
 const projectData = [
@@ -16,6 +17,16 @@ const projectData = [
     description: "I developed a delivery package tracking system...",
     link: "",
   },
+   {
+    id: 5,
+    slug: "",
+    image: card61,
+    category: "Web Dev",
+    title: "The Round Table After Dark",
+    description: "I served as lead developer on a horror game...",
+    link: "https://afterdark-game.com",
+  },
+  
   {
     id: 2,
     slug: "",

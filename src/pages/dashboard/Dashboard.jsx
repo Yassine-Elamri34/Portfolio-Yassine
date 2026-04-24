@@ -67,13 +67,18 @@ const Dashboard = () => {
           </p>
         </section>
 
-        <section>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Live Demo</h2>
-          <a href="https://box2home-dashboards-3.onrender.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary inline-flex items-center gap-2">
-            View Live Demo
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          </a>
-        </section>
+       <section>
+  <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Live Demo</h2>
+  <p className="text-gray-600 text-[16px] leading-relaxed mb-4">
+    The data shown in this live demo is simulated for demonstration purposes only. Due to 
+    confidentiality agreements with <strong>Box2home</strong>, all real operational data has 
+    been replaced with placeholder values.
+  </p>
+  <a href="https://box2home-dashboards-3.onrender.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary inline-flex items-center gap-2">
+    View Live Demo
+    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+  </a>
+</section>
 
         <section>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Goals</h2>
