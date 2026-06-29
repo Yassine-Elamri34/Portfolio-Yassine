@@ -16,6 +16,17 @@ const projectData = [
     title: "Fixinit",
     description: "I built a platform that connects businesses with local IT technicians for... ",
   },
+
+{
+    id: 5,
+    slug: "",
+    image: card61,
+    category: "Web Dev",
+    title: "The Round Table After Dark",
+    description: "I served as lead developer on a horror game...",
+    link: "https://afterdark-game.com",
+  },
+
   {
     id: 1,
     slug: "dashboard",
@@ -25,16 +36,8 @@ const projectData = [
     description: "I developed a delivery package tracking system...",
     link: "",
   },
-   {
-    id: 5,
-    slug: "",
-    image: card61,
-    category: "Web Dev",
-    title: "The Round Table After Dark",
-    description: "I served as lead developer on a horror game...",
-    link: "https://afterdark-game.com",
-  },
-  
+
+
   {
     id: 2,
     slug: "",
