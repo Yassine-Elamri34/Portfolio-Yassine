@@ -5,6 +5,7 @@ import Loading from "../components/common/loading/Loading";
 const Home = lazy(() => import("../pages/Home"));
 const Main = lazy(() => import("../layouts/Main"));
 const Dashboard = lazy(() => import("../pages/dashboard/Dashboard"));
+const Fixinit = lazy(() => import("../pages/Fixinit/Fixinit"));
 
 export const router = createHashRouter([
   {
@@ -26,6 +27,14 @@ export const router = createHashRouter([
     element: (
       <Suspense fallback={<Loading />}>
         <Dashboard />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/Fixinit",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <Fixinit />
       </Suspense>
     ),
   },

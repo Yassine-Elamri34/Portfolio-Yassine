@@ -6,13 +6,21 @@ import card49 from "../../assets/images/portfolio-images/card-49.png";
 import card60 from "../../assets/images/portfolio-images/card-60.png";
 import card61 from "../../assets/images/portfolio-images/card-61.png";
 import card51 from "../../assets/images/portfolio-images/card-51.png";
-
+import card69 from "../../assets/images/portfolio-images/card-69.png";
 const projectData = [
+    {
+    id: 6,
+    slug: "Fixinit",
+    image: card69,
+    category: "Web Dev + AI",
+    title: "Fixinit",
+    description: "I built a platform that connects businesses with local IT technicians for... ",
+  },
   {
     id: 1,
     slug: "dashboard",
     image: card49,
-    category: "Web Dev",
+    category: "Web Dev + BI",
     title: "Dashboard",
     description: "I developed a delivery package tracking system...",
     link: "",

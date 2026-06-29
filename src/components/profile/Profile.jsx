@@ -11,16 +11,18 @@ const Profile = () => {
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
         {/* Profile image */}
-        <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
+        <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126 mt-6">
           <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
-            <img
-              className="bg-soft-white h-[120%] object-cover"
-              src={person}
-              alt="Profile"
-            />
+    <div className="max-w-[420px] overflow-hidden rounded-xl">
+  <img
+    src={person}
+    alt="Profile"
+    className="w-full h-auto rounded-xl"
+  />
+</div>
           </div>
           {/* Social media section */}
-          <div className="relative bottom-9">
+          <div className="relative bottom-8">
             <div className="flex justify-center">
               <div className="px-6 max-w-66 py-3 z-50 text-center bg-white rounded-[4px] shadow-2xl drop-shadow-2xl shadow-white">
                 <SocialMedia />
