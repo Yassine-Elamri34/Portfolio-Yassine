@@ -1,7 +1,7 @@
 import Projects from "./Projects";
-import card1 from "../../assets/images/portfolio-images/card-1.png";
+
 import card50 from "../../assets/images/portfolio-images/card-50.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
+
 import card49 from "../../assets/images/portfolio-images/card-49.png";
 import card60 from "../../assets/images/portfolio-images/card-60.png";
 import card61 from "../../assets/images/portfolio-images/card-61.png";
