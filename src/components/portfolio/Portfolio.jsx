@@ -88,7 +88,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="text-center">
-      <a
+      {/* <a
   href="#portfolio"
   onClick={(e) => {
     e.preventDefault();
@@ -99,7 +99,7 @@ const Portfolio = () => {
   className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
 >
   More Project
-</a>
+</a> */}
 
       </div>
     </div>
