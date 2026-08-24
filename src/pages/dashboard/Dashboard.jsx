@@ -68,18 +68,14 @@ const Dashboard = () => {
         </section>
 
        <section>
-  <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Live Demo</h2>
+  <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4"> Demo</h2>
   <p className="text-gray-600 text-[16px] leading-relaxed mb-4">
-    The data shown in this live demo is simulated for demonstration purposes only. Due to 
-    confidentiality agreements with <strong>Box2home</strong>, all real operational data has 
-    been replaced with placeholder values.
+    <p>
+ The data displayed in this project is simulated for demonstration purposes only. Due to <strong>confidentiality agreements </strong>  with Box2home, all real operational data has been replaced with placeholder values. Please find full details in the gallery.
+</p>
   </p>
-  <a href="https://box2home-dashboards-3.onrender.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary inline-flex items-center gap-2">
-    View Live Demo
-    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-  </a>
-</section>
 
+</section>
         <section>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Goals</h2>
           <ul className="flex flex-col gap-2 text-gray-600 text-[16px] leading-relaxed">
