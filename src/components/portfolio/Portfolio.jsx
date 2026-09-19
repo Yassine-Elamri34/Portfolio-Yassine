@@ -60,10 +60,10 @@ const projectData = [
     id: 4,
     slug: "",
     image: card60,
-    category: "Web Dev",
-    title: "Student Life Assistant",
-    description: "I developed a Student Life Assistant...",
-    link: "https://yassine-elamri34.github.io/studentLifeAssistant-Project/",
+    category: "Web Dev + AI",
+    title: "Spotly",
+    description: "Shop smarter, find faster...",
+    link: "https://spotly-zmfm.onrender.com/",
   },
 ];
 const Portfolio = () => {
