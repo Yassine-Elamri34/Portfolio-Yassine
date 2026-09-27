@@ -9,13 +9,15 @@ import card51 from "../../assets/images/portfolio-images/card-51.png";
 import card69 from "../../assets/images/portfolio-images/card-69.png";
 const projectData = [
     {
-    id: 6,
-    slug: "Fixinit",
-    image: card69,
-    category: "Web Dev + AI",
-    title: "Fixinit",
-    description: "I built a platform that connects businesses with local IT technicians for... ",
-  },
+  id: 6,
+  slug: "Fixinit",
+  image: card69,
+  category: "Web Dev + AI",
+  title: "Fixinit",
+  description:
+    "I built a platform that connects businesses with local IT technicians for...",
+  github: "https://github.com/Yassine-Elamri34/Fixinit",
+},
 
 {
     id: 5,

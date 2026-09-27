@@ -1,33 +1,73 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const Projects = ({ data }) => {
-  const buttonClass = "btn hover:border-picto-primary hover:text-picto-primary bg-white text-sm xs:text-[16px] font-semibold hover:gap-3 xs:hover:gap-4 transition-all duration-300 mt-5 xs:py-5.75 px-6 max-sm:w-full";
+  const buttonClass =
+    "btn hover:border-picto-primary hover:text-picto-primary bg-white text-sm xs:text-[16px] font-semibold hover:gap-3 xs:hover:gap-4 transition-all duration-300 xs:py-5.75 px-6 max-sm:w-full";
 
   return (
     <div className="max-w-106 rounded-lg outline-[#FFFFFF] hover:shadow-2xl duration-300 transition-all shadow-gray-300 border border-gray-200">
       <img src={data?.image} alt={`${data?.title} image`} />
+
       <div className="p-4 xs:p-8">
-        <p className="text-gray-400 text-xs font-medium">{data?.category}</p>
+        <p className="text-gray-400 text-xs font-medium">
+          {data?.category}
+        </p>
+
         <p className="text-gray-900 text-md xxs:text-lg font-semibold pt-1 mb-3">
           {data?.title}
         </p>
-        <p style={{ lineHeight: "20px", letterSpacing: "0%" }} className="text-gray-600 text-xs xxs:text-[14px] text-wrap">
+
+        <p
+          style={{ lineHeight: "20px", letterSpacing: "0%" }}
+          className="text-gray-600 text-xs xxs:text-[14px] text-wrap"
+        >
           {data?.description}
         </p>
+
         {data?.slug ? (
-          <Link to={`/${data.slug}`} className={buttonClass}>
-            Case Study
-            <span className="ms-1 xs:ms-3">
-              <FontAwesomeIcon icon={faArrowRight} size="l" />
-            </span>
-          </Link>
+          <div className="flex flex-col xs:flex-row gap-3 mt-5">
+            {/* Case Study */}
+            <Link
+              to={`/${data.slug}`}
+              className={buttonClass}
+            >
+              Case Study
+
+              <span className="ms-1 xs:ms-3">
+                <FontAwesomeIcon icon={faArrowRight} />
+              </span>
+            </Link>
+
+            {/* GitHub */}
+            {data?.github && (
+              <a
+                href={data.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClass}
+              >
+                GitHub
+
+                <span className="ms-1 xs:ms-3">
+                  <FontAwesomeIcon icon={faGithub} />
+                </span>
+              </a>
+            )}
+          </div>
         ) : (
-          <a href={data?.link} target="_blank" rel="noopener noreferrer" className={buttonClass}>
+          <a
+            href={data?.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${buttonClass} mt-5`}
+          >
             Go Live
+
             <span className="ms-1 xs:ms-3">
-              <FontAwesomeIcon icon={faArrowRight} size="l" />
+              <FontAwesomeIcon icon={faArrowRight} />
             </span>
           </a>
         )}
