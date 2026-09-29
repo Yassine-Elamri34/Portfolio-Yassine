@@ -7,7 +7,16 @@ import card60 from "../../assets/images/portfolio-images/card-60.png";
 import card61 from "../../assets/images/portfolio-images/card-61.png";
 import card51 from "../../assets/images/portfolio-images/card-51.png";
 import card69 from "../../assets/images/portfolio-images/card-69.png";
-const projectData = [
+const projectData = [ 
+   {
+    id: 4,
+    slug: "",
+    image: card60,
+    category: "Web Dev + AI",
+    title: "Spotly",
+    description: "Shop smarter, find faster...",
+    link: "https://spotly-zmfm.onrender.com/",
+  },
    {
   id: 6,
   slug: "Fixinit",
@@ -19,7 +28,15 @@ const projectData = [
   link: "https://fixinit.ca",
   github: "YOUR_FIXINIT_GITHUB_REPO_LINK",
 },
-
+ {
+    id: 1,
+    slug: "dashboard",
+    image: card49,
+    category: "Web Dev + BI",
+    title: "Dashboard",
+    description: "I developed a delivery package tracking system...",
+    link: "",
+  },
 {
     id: 5,
     slug: "",
@@ -30,15 +47,7 @@ const projectData = [
     link: "https://afterdark-game.com",
   },
 
-  {
-    id: 1,
-    slug: "dashboard",
-    image: card49,
-    category: "Web Dev + BI",
-    title: "Dashboard",
-    description: "I developed a delivery package tracking system...",
-    link: "",
-  },
+ 
 
 
   {
@@ -59,15 +68,7 @@ const projectData = [
     description: "I developed a flip memory card game...",
     link: "https://yassine-elamri34.github.io/Final-Web-Design-Project/",
   },
-  {
-    id: 4,
-    slug: "",
-    image: card60,
-    category: "Web Dev + AI",
-    title: "Spotly",
-    description: "Shop smarter, find faster...",
-    link: "https://spotly-zmfm.onrender.com/",
-  },
+
 ];
 const Portfolio = () => {
   return (
