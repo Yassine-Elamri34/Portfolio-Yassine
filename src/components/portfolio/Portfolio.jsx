@@ -12,7 +12,7 @@ const projectData = [
     id: 4,
     slug: "",
     image: card60,
-    category: "Web Dev + AI",
+    category: "Web Dev + Artificial Intelligence",
     title: "Spotly",
     description: "Shop smarter, find faster...",
     link: "https://spotly-zmfm.onrender.com/",
@@ -21,7 +21,7 @@ const projectData = [
   id: 6,
   slug: "Fixinit",
   image: card69,
-  category: "Web Dev + AI",
+  category: "Web Dev + Artificial Intelligence",
   title: "Fixinit",
   description:
     "I built a platform that connects businesses with local IT technicians for...",
