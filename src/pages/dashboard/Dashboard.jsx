@@ -19,7 +19,7 @@ import img10 from "./images/10.png";
 import img11 from "./images/11.png";
 
 import projectReport from "./Project-Report.PDF";
-import internshipPresentation from "./presentation-Yassine.pdf";
+import internshipPresentation from "./Presentation-Yassine.pdf";
 
 const galleryImages = [
   { src: img1, alt: "Dashboard Interface" },
