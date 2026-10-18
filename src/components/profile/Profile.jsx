@@ -1,3 +1,4 @@
+
 import person from "../../assets/images/person2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -10,18 +11,20 @@ const Profile = () => {
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
-        {/* Profile image */}
+
+        {/* PROFILE IMAGE */}
         <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126 mt-6">
           <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
-    <div className="max-w-[420px] overflow-hidden rounded-xl">
-  <img
-    src={person}
-    alt="Profile"
-    className="w-full h-auto rounded-xl"
-  />
-</div>
+            <div className="max-w-[420px] overflow-hidden rounded-xl">
+              <img
+                src={person}
+                alt="Profile"
+                className="w-full h-auto rounded-xl"
+              />
+            </div>
           </div>
-          {/* Social media section */}
+
+          {/* SOCIAL MEDIA */}
           <div className="relative bottom-8">
             <div className="flex justify-center">
               <div className="px-6 max-w-66 py-3 z-50 text-center bg-white rounded-[4px] shadow-2xl drop-shadow-2xl shadow-white">
@@ -31,49 +34,61 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Bio section */}
+        {/* ABOUT ME */}
         <div className="max-sm:w-full w-[33rem]">
+
           <h2 className="text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] max-md:text-center font-semibold mb-8">
-            I am a professional Web Developer
+            Technology, Data & Problem-Solving
           </h2>
 
           <div className="text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600 space-y-4">
-            <p>
-              I build websites that do more than look good — they're backed by
-              data and built to perform. My background in Business Intelligence
-              gives me a different perspective on web development: I think about
-              how a site <em>behaves</em> and what it <em>tells you</em>, not
-              just how it looks.
-            </p>
-            <p>
-              Based in Toronto, I focus on responsive, modern web experiences
-              where clean code and smart design work together. If you have an
-              idea, I'll figure out the best way to build it.
-            </p>
-          </div>
-          <div className="mt-8 flex max-md:justify-center">
-            <a
-  href="#portfolio"
-  onClick={(e) => {
-    e.preventDefault();
-    document
-      .getElementById("portfolio")
-      ?.scrollIntoView({ behavior: "smooth" });
-  }}
-  className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
->
-  My Projects
-</a>
 
-<a
- className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary ms-4 text-xs xxs:text-[14px] sm:text-[16px]"
-  href="/YassineResume.pdf"
-  download="Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FontAwesomeIcon icon={faDownload} /> Download CV
-</a>
+            <p>
+              With a background in Business Intelligence and
+              Software Development, I combine analytical thinking
+              with technical expertise to solve real-world problems.
+              From analyzing data and developing applications to
+              troubleshooting technical issues, I focus on building
+              practical and efficient solutions.
+            </p>
+
+            <p>
+              Based in Toronto, I'm passionate about technology,
+              continuous learning, and improving how systems work.
+              I adapt quickly to new tools and challenges, bringing
+              a problem-solving mindset to IT, data analytics,
+              and software development.
+            </p>
+
+          </div>
+
+          {/* BUTTONS */}
+          <div className="mt-8 flex max-md:justify-center">
+
+            <a
+              href="#portfolio"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("portfolio")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
+            >
+              My Projects
+            </a>
+
+            <a
+              className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary ms-4 text-xs xxs:text-[14px] sm:text-[16px]"
+              href="/YassineResume.pdf"
+              download="Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faDownload} />
+              Download CV
+            </a>
+
           </div>
         </div>
       </div>
