@@ -1,92 +1,99 @@
+
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const Projects = ({ data }) => {
-const buttonClass =
-  "btn hover:border-picto-primary hover:text-picto-primary bg-white text-[13px] xs:text-[14px] font-semibold transition-all duration-300 px-3 py-2 min-h-0 h-10 whitespace-nowrap";
-  return (
-    <div className="max-w-106 rounded-lg outline-[#FFFFFF] hover:shadow-2xl duration-300 transition-all shadow-gray-300 border border-gray-200">
-      <img src={data?.image} alt={`${data?.title} image`} />
+  const buttonClass =
+    "btn flex items-center justify-center gap-2 w-full h-10 min-h-0 " +
+    "px-2 py-2 bg-white border border-gray-200 rounded-md " +
+    "text-gray-900 text-[12px] sm:text-[13px] font-semibold " +
+    "hover:border-picto-primary hover:text-picto-primary " +
+    "transition-all duration-300 whitespace-nowrap";
 
-      <div className="p-4 xs:p-8">
+  return (
+    <div className="w-full h-full max-w-106 flex flex-col rounded-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 shadow-gray-300 overflow-hidden">
+
+      {/* PROJECT IMAGE */}
+      <img
+        src={data?.image}
+        alt={`${data?.title} image`}
+        className="w-full object-cover"
+      />
+
+      {/* CARD CONTENT */}
+      <div className="p-4 xs:p-6 flex flex-col flex-grow">
+
+        {/* CATEGORY */}
         <p className="text-gray-400 text-xs font-medium">
           {data?.category}
         </p>
 
+        {/* TITLE */}
         <p className="text-gray-900 text-md xxs:text-lg font-semibold pt-1 mb-3">
           {data?.title}
         </p>
 
+        {/* DESCRIPTION */}
         <p
-          style={{ lineHeight: "20px", letterSpacing: "0%" }}
           className="text-gray-600 text-xs xxs:text-[14px] text-wrap"
+          style={{ lineHeight: "20px" }}
         >
           {data?.description}
         </p>
 
-      {data?.slug ? (
-  <div className="flex flex-row justify-center items-center gap-3 mt-5 flex-nowrap">
+        {/* BUTTONS - ALWAYS AT BOTTOM */}
+        <div className="mt-auto pt-6">
 
-    {/* GO LIVE */}
-    {data?.link && (
-      <a
-        href={data.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={buttonClass}
-      >
-        Go Live
+          <div className="flex flex-wrap items-center justify-start gap-2 w-full">
 
-        <span className="ms-1 xs:ms-3">
-          <FontAwesomeIcon icon={faArrowRight} />
-        </span>
-      </a>
-    )}
+            {/* GO LIVE */}
+            {data?.link ? (
+              <a
+                href={data.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClass}
+              >
+                Go Live
+                <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+            ) : (
+              <div />
+            )}
 
-    {/* CASE STUDY */}
-    <Link
-      to={`/${data.slug}`}
-      className={buttonClass}
-    >
-      Case Study
+            {/* CASE STUDY */}
+            {data?.slug ? (
+              <Link
+                to={`/${data.slug}`}
+                className={buttonClass}
+              >
+                Case Study
+                <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
+            ) : (
+              <div />
+            )}
 
-      <span className="ms-1 xs:ms-3">
-        <FontAwesomeIcon icon={faArrowRight} />
-      </span>
-    </Link>
+            {/* GITHUB */}
+            {data?.github ? (
+              <a
+                href={data.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClass}
+              >
+                GitHub
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            ) : (
+              <div />
+            )}
 
-    {/* GITHUB */}
-    {data?.github && (
-      <a
-        href={data.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={buttonClass}
-      >
-        GitHub
+          </div>
+        </div>
 
-        <span className="ms-1 xs:ms-3">
-          <FontAwesomeIcon icon={faGithub} />
-        </span>
-      </a>
-    )}
-  </div>
-) : (
-  <a
-    href={data?.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`${buttonClass} mt-5`}
-  >
-    Go Live
-
-    <span className="ms-1 xs:ms-3">
-      <FontAwesomeIcon icon={faArrowRight} />
-    </span>
-  </a>
-)}
       </div>
     </div>
   );

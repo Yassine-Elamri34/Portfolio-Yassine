@@ -8,15 +8,18 @@ import card61 from "../../assets/images/portfolio-images/card-61.png";
 import card51 from "../../assets/images/portfolio-images/card-51.png";
 import card69 from "../../assets/images/portfolio-images/card-69.png";
 const projectData = [ 
-   {
-    id: 4,
-    slug: "",
-    image: card60,
-    category: "Web Dev + Artificial Intelligence + Smart Retail Technology",
-    title: "Spotly",
-    description: "Shop smarter, find faster...",
-    link: "https://spotly-zmfm.onrender.com/",
-  },
+  
+{
+  id: 4,
+  slug: "",
+  image: card60,
+  category: "Web Dev + Artificial Intelligence + Smart Retail Technology",
+  title: "Spotly",
+  description: "Shop smarter, find faster...",
+  link: "https://spotly-zmfm.onrender.com/",
+  github: "https://github.com/Yassine-Elamri34/Spotly",
+},
+
    {
   id: 6,
   slug: "Fixinit",
@@ -26,7 +29,7 @@ const projectData = [
   description:
     "I built a platform that connects businesses with local IT technicians for...",
   link: "https://fixinit.ca",
-  github: "YOUR_FIXINIT_GITHUB_REPO_LINK",
+  github: "https://github.com/Yassine-Elamri34/Fixinit",
 },
  {
     id: 1,
@@ -36,6 +39,7 @@ const projectData = [
     title: "Dashboard",
     description: "I developed a delivery package tracking system...",
     link: "",
+     github: "https://github.com/Yassine-Elamri34/Box2home-Dashboards"
   },
 {
     id: 5,
@@ -45,6 +49,7 @@ const projectData = [
     title: "The Round Table After Dark",
     description: "I served as lead developer on a horror game...",
     link: "https://afterdark-game.com",
+    github: "https://github.com/TrioTech-WebDev/afterdark-game"
   },
 
  
@@ -67,6 +72,7 @@ const projectData = [
     title: "Web Design Project",
     description: "I developed a flip memory card game...",
     link: "https://yassine-elamri34.github.io/Final-Web-Design-Project/",
+     github: "https://github.com/Yassine-Elamri34/Final-Web-Design-Project"
   },
 
 ];
